@@ -50,6 +50,7 @@ public class Main {
     //    for (String content : normName) {
     //        System.out.print(content);
     //    }
+
         System.out.println();
         for (int i = reverseName.length - 1; i >= 0; i--) {
             System.out.print(reverseName[i]);
