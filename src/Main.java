@@ -17,7 +17,8 @@ public class Main {
         System.out.printf("Сумма трат за месяц составила %d рублей.\n", totalConsumption);
 
  // 2.
-        System.out.println("2.");int contentMin = consumption[0], contentMax = consumption[0];
+        System.out.println("\n2.");
+        int contentMin = consumption[0], contentMax = consumption[0];
         for (int i = 1; i < consumption.length; i++) {
             if (contentMin > consumption[i]) {
                 contentMin = consumption[i];
@@ -28,5 +29,14 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за неделю составила " + contentMin);
         System.out.println("Максимальная сумма трат за неделю составила " + contentMax);
+
+ // 3.
+        System.out.println("\n3.");
+        float average = 0.0f;
+        for (int content : consumption) {
+            average += content;
+        }
+        average /= consumption.length;
+        System.out.printf("Средняя сумма недельных трат за месяц составила %.2f рублей", average);
     }
 }
