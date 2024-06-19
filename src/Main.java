@@ -37,6 +37,18 @@ public class Main {
             average += content;
         }
         average /= consumption.length;
-        System.out.printf("Средняя сумма недельных трат за месяц составила %.2f рублей", average);
+        System.out.printf("Средняя сумма недельных трат за месяц составила %.2f рублей\n", average);
+
+ // 4.
+        System.out.println("\n4.");
+        String [] reverseName = {"n", "a", "v", "I", " ", "v", "o", "n", "a", "v", "I"};
+        String [] normName = new String [reverseName.length];
+        for (int i = 0; i < reverseName.length; i++) {
+            normName[i] = reverseName[reverseName.length - i - 1];
+        }
+        System.out.println(Arrays.toString(normName));
+        for (String content : normName) {
+            System.out.print(content);
+        }
     }
 }
