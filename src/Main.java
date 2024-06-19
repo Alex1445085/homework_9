@@ -15,5 +15,18 @@ public class Main {
             totalConsumption += content;
         }
         System.out.printf("Сумма трат за месяц составила %d рублей.\n", totalConsumption);
+
+ // 2.
+        System.out.println("2.");int contentMin = consumption[0], contentMax = consumption[0];
+        for (int i = 1; i < consumption.length; i++) {
+            if (contentMin > consumption[i]) {
+                contentMin = consumption[i];
+            }
+            if (contentMax < consumption[i]) {
+                contentMax = consumption[i];
+            }
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " + contentMin);
+        System.out.println("Максимальная сумма трат за неделю составила " + contentMax);
     }
 }
