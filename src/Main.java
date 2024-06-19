@@ -41,16 +41,7 @@ public class Main {
 
  // 4.
         System.out.println("\n4.");
-        String [] reverseName = {"n", "a", "v", "I", " ", "v", "o", "n", "a", "v", "I"};
-    //    String [] normName = new String [reverseName.length];
-    //    for (int i = 0; i < reverseName.length; i++) {
-    //        normName[i] = reverseName[reverseName.length - i - 1];
-    //    }
-    //    System.out.println(Arrays.toString(normName));
-    //    for (String content : normName) {
-    //        System.out.print(content);
-    //    }
-        System.out.println();
+        char [] reverseName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseName.length - 1; i >= 0; i--) {
             System.out.print(reverseName[i]);
         }
