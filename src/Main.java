@@ -45,5 +45,15 @@ public class Main {
         for (int i = reverseName.length - 1; i >= 0; i--) {
             System.out.print(reverseName[i]);
         }
+        System.out.println();
+        char temporary;
+        for (int i = 0; i < reverseName.length / 2; i++) {
+            temporary = reverseName[i];
+            reverseName[i] = reverseName[reverseName.length - i - 1];
+            reverseName[reverseName.length - i - 1] = temporary;
+        }
+        for (char content : reverseName) {
+            System.out.print(content);
+        }
     }
 }
